@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main()
+{
+    int mark;
+    int arr[5][3];
+
+    for (int i = 0; i < 3; i++)
+    {
+        printf("Enter the element of Row %d:\n", i + 1);
+        for (int j = 0; j < 4; j++)
+        {
+            printf("Column %d: ", j + 1);
+            scanf("%d", &mark);
+            arr[i][j] = mark;
+        }
+    }
+
+    printf("\nMatrix Created is:\n");
+    for (int i = 0; i < 3; i++)
+    {
+        for (int j = 0; j < 4; j++)
+        {
+            printf("%d ", arr[i][j]);
+        }
+        printf("\n");
+    }
+
+    return 0;
+}
