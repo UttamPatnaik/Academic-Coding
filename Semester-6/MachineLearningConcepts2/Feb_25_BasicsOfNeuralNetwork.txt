@@ -1,0 +1,140 @@
+Why Neural Networks are Important?
+-Capture Non Linear Relationships
+-Handle large volumes of data
+-Automatically extract features
+-Improveperformance with experience
+
+Applications:
+-Image recognition(Face/Object Detection)
+-Speech recognition(Voice assistants)
+-NLP(Chatbots,Translations)
+-Medical Diagnosis
+-Stock Market Prediction
+-Self Driving Cars
+-Recommendation Systems
+
+Human/Traditional ML/NN
+
+Aspect|Human|ML|NN
+Basis|Experience&Train|Stattistics and rules|Brain inspired structures
+Adaptability|Very High|Moderate|VeryHigh
+PAttern Execeution|Natural|Limited|Strong
+Parellel processing|Yes|No|Yes
+
+Key Characteristics of NN
+Parelleism
+Adaptability
+Non Linearity
+Generalization
+Fault Tolerance
+
+Biological Neuron
+
+To understand ANN, we must first understand the Biological Neuron since ANN is inspired by it.
+
+A Neuron (Nerve Cell)
+
+->The Fundamental unit of human nervous system
+->Responsible for receieving processing and transmiting info.
+->The human rain contain billions of neurons interconnected in complex networks
+
+These networks enable humans to think learn remember make decisions and perform motor functions.
+
+Structure of a Biological Neuron
+
+->Dendrites           /Add a diagram here. Btw dont do again in ipynb use github md fileand put code 
+ -Branch like extensions                                       /files separately from now on
+ -Recieve signals from other neurons.
+ -Act as input channels
+ -The more dendrites the more signals a neuron can recieve.
+->Cell Body(Soma)
+ -Central part of neuron 
+ -Processes incoming signals
+ -Decides whether the neuron should activate or not
+ -Contains the nucleus and essential cellular machinary
+->Axon
+ -Long tail like structures
+ -Carries signals away from the cell body
+ -Acts as output channel
+ -Can be extremely long compared to toher part
+->Synapse
+ -Junction between 2 neurons
+ -The point where signals are transferred
+ -The strength of a synapse determines how strongly neurons are connected
+ -synapse strength changeswith learning and experience
+ 
+How Signal Transmissions Occurs
+
+The process of communication between neurons follows these steps
+1.Signal Reception
+2.Signal Integration
+3.Threshold Check
+4.Signal Transmission
+
+This process happens millions of time per second in the human brain
+
+Key functional characteristics:
+
+(i)Threshold Activation
+  -A neuron fires only when input strength crosses a limit.
+  -Prevents unnessacary activation
+(ii)Parellel Processing
+  -Multiple Neurons work simultaneously
+  -Enables fast decision making
+(iii)Plasticity(Learning Ability)
+  -Synaptic strength change over time
+  -Learning occurs by strengthening/weakening connections
+  
+Artificial Neural Networks-ANN:
+
+The artificial neuron simulates a biological neuron digitally.
+Components:
+
+1.Inputs:x1,x2,x3......,xn
+2.Weights:w1,w2,w3.....,wn(Measure connection strength or importance)
+3.Summation Function: ysum=Summation(wixi).Sometimes includes a bias:
+ b+Summation(wixi)
+Weights can be:
+->Positive-> Excitatory (increases output influence)
+->Negative-> Inhibitory (decreases output influence)
+
+4.Activation Function f(x)
+=>Applies a non linear transformation to the weighted sum.
+=>Determines whether neuron should 'fire' or stay inactive
+Formula: ysum=f(ysum)
+
+Type of Activation Functions
+
+=>Linear Functions
+  ->Mainly used in input layers
+  ->Cannot model complex patterns
+
+Analogy: Copying homework without understanding
+
+=>Threshold/Step Functions
+  ->Produces binary output
+  ->Used in early perceptrons
+  
+  f(x)=1 if x>=0
+  f(x)=0 if x<0
+  
+=>ReLU(Rectified Linear Unit)
+
+  f(x)=max(0,x)
+  ->Widely used in deep learning
+  ->Fast computation
+  ->Helps prevnets vanishing gradient problem
+Analogy:Like a one way valve allwoing only positve flow
+Limitations: Dead neuron problem if values stay negative
+
+=>Sigmoid Function
+There are 2 types of sigmoid functions
+
+1.Binary Sigmoid Function:
+->f(x)=1(1+e^(-kx))
+->Output range=(0,1)
+->Useful in binary classification
+->Interpretable as Probability
+Example:Spam Detection Probablility 
+ 
+ 
