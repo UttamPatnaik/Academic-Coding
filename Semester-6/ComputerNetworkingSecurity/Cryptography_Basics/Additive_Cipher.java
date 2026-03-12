@@ -53,3 +53,14 @@ public class AdditiveCipher {
         }
     }
 }
+
+//Sample Input and Output
+/*
+Enter a string:
+HELLO
+Enter a number between 1 and 25
+3
+Enter 1 for Encryption or 2 for Decryption
+1
+KHOOR
+*/
