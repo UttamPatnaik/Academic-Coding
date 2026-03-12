@@ -38,3 +38,12 @@ public class MultiplicativeCipher {
         return gcd(b, a % b);
     }
 }
+
+//Sample Input and Output
+/*
+Enter a string:
+HELLO
+Enter a key (coprime with 26):
+5
+JUDDS
+*/
